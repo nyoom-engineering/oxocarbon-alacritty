@@ -17,24 +17,12 @@ Oxocarbon is a set of community ports of IBM's carbon color palette and design p
 
 ## Showcase
 
-<screenshots>
+![neofetch](assets/neofetch.png)
+![pipes-sh](assets/pipes-sh.png)
 
 ## Install
 
-- Installation
-
-## Features (optional)
-
-- Special features and UI tweaks
-
-### Plugin Support (optional)
-
-- What plugins does it support
-
-## FAQ (optional)
-
-- Q: **_"Where can I find the doc?"_**\
- A: Run `:help theme`
+Replace the current color definitions in your [`alacritty.yml`](https://github.com/alacritty/alacritty#configuration) configuration file with the content from the [`oxocarbon-alacritty.yml`](https://github.com/nyoom-engineering/oxocarbon-alacritty/blob/main/oxocarbon-dark.yml) file.
 
 ## License
 
