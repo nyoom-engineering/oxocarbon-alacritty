@@ -1,4 +1,4 @@
-OxocarbonDark: &OxocarbonDark
+colors:
   primary:
     background: "#161616"
     foreground: "#ffffff"

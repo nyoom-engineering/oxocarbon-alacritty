@@ -5,7 +5,7 @@ import jinja2
 def read_theme(name: str):
     theme = {}
 
-    with open(f"theme/base16-oxocarbon-{name}.yaml", "r") as f:
+    with open(f"palette/base16-oxocarbon-{name}.yaml", "r") as f:
         theme = yaml.safe_load(f)
         f.close()
 
@@ -14,7 +14,7 @@ def read_theme(name: str):
 
 def main():
     env = jinja2.Environment(loader=jinja2.FileSystemLoader("./templates/"))
-    tmp = env.get_template("scheme.yml.j2")
+    tmp = env.get_template("oxocarbon-dark.yml.j2")
     thm = read_theme('dark')
 
     con = tmp.render(thm)
