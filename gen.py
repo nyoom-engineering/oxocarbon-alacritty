@@ -14,16 +14,23 @@ def read_theme(name: str):
 
 def main():
     env = jinja2.Environment(loader=jinja2.FileSystemLoader("./templates/"))
-    tmp = env.get_template("oxocarbon-dark.yml.j2")
+    tmp1 = env.get_template("oxocarbon-dark.toml.j2")
+    tmp2 = env.get_template("oxocarbon-dark.yml.j2")
     thm = read_theme('dark')
 
-    con = tmp.render(thm)
+    con1 = tmp1.render(thm)
+    con2 = tmp2.render(thm)
+
+    open('oxocarbon-dark.toml', 'w').close()
+
+    with open('oxocarbon-dark.toml', 'w') as f:
+        f.write(con1)
+        f.close()
 
     open('oxocarbon-dark.yml', 'w').close()
 
     with open('oxocarbon-dark.yml', 'w') as f:
-        f.write(con)
+        f.write(con2)
         f.close()
-
 
 main()
