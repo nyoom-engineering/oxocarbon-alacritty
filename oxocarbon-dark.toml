@@ -5,7 +5,7 @@ foreground = "#ffffff"
 
 # Search colors
 [colors.search.matches]
-foreground = CellBackground
+foreground = 'CellBackground'
 background = '#ee5396'
 
 # Normal colors
